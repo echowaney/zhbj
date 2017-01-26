@@ -14,6 +14,7 @@ import com.example.hashwaney.zhbj.fragment.HomeFragment;
 import com.example.hashwaney.zhbj.fragment.NewsCenterFragment;
 import com.example.hashwaney.zhbj.fragment.SettingFragment;
 import com.example.hashwaney.zhbj.fragment.SmarServiceFragment;
+import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +39,26 @@ public class MainActivity
         setContentView(R.layout.activity_main);
         initView();
         initVp();
+        initSlidingMenu();
+    }
+
+    private void initSlidingMenu() {
+        SlidingMenu slidingMenu =new SlidingMenu(this);
+        //设置
+
+        //设置滑出的方式
+        slidingMenu.setTouchModeAbove(SlidingMenu.LEFT);
+        //设置宽度
+        slidingMenu.setBehindWidth(400);
+
+        //设置布局
+        slidingMenu.setMenu(R.layout.activity_menu);
+
+        //关联acitiviyt
+        slidingMenu.attachToActivity(this,SlidingMenu.SLIDING_CONTENT);
+
+
+
     }
 
 
