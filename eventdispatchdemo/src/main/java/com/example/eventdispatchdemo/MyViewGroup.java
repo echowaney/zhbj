@@ -43,7 +43,7 @@ public class MyViewGroup
         View childAt = getChildAt(0);
         childAt.measure(widthMeasureSpec,heightMeasureSpec);
 //        childAt.measure(0,0);
-
+//
     }
 
     @Override
