@@ -58,6 +58,7 @@ public class MyView
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         Log.d("MainActivity", "   MyView            onTouchEvent: ");
+        getParent().requestDisallowInterceptTouchEvent(true);
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
 

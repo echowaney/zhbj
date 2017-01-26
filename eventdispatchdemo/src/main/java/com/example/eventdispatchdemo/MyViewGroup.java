@@ -18,7 +18,7 @@ public class MyViewGroup
 {
 
     public MyViewGroup(Context context) {
-        this(context,null);
+        this(context, null);
     }
 
 
@@ -41,14 +41,14 @@ public class MyViewGroup
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
         super.onMeasure(widthMeasureSpec, heightMeasureSpec);
         View childAt = getChildAt(0);
-        childAt.measure(widthMeasureSpec,heightMeasureSpec);
-//        childAt.measure(0,0);
-//
+        childAt.measure(widthMeasureSpec, heightMeasureSpec);
+        //        childAt.measure(0,0);
+        //
     }
 
     @Override
     protected void onLayout(boolean changed, int l, int t, int r, int b) {
-            getChildAt(0).layout(l,t,r,b);
+        getChildAt(0).layout(l, t, r, b);
     }
 
     @Override
@@ -60,8 +60,24 @@ public class MyViewGroup
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         Log.d("MainActivity", "   MyViewGroup         onInterceptTouchEvent:");
-        return super.onInterceptTouchEvent(ev);
-//    return true;//true ：表示拦截事件，不往下传递事件，
+
+        switch (ev.getAction()) {
+            case MotionEvent.ACTION_DOWN:
+
+                Log.d("MainActivity", "MyViewGroup     按下: ");
+                return super.onInterceptTouchEvent(ev);
+            case MotionEvent.ACTION_MOVE:
+                Log.d("MainActivity", "MyViewGroup     移动: ");
+                break;
+            case MotionEvent.ACTION_UP:
+                Log.d("MainActivity", "MyViewGroup     弹起: ");
+                break;
+
+
+        }
+
+        //        return super.onInterceptTouchEvent(ev);
+        return true;//true ：表示拦截事件，不往下传递事件，
     }
 
 
