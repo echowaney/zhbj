@@ -14,6 +14,7 @@ import com.example.hashwaney.zhbj.fragment.HomeFragment;
 import com.example.hashwaney.zhbj.fragment.NewsCenterFragment;
 import com.example.hashwaney.zhbj.fragment.SettingFragment;
 import com.example.hashwaney.zhbj.fragment.SmarServiceFragment;
+import com.example.hashwaney.zhbj.view.NoScrollViewPager;
 import com.jeremyfeinstein.slidingmenu.lib.SlidingMenu;
 
 import java.util.ArrayList;
@@ -24,7 +25,7 @@ public class MainActivity
         implements RadioGroup.OnCheckedChangeListener, ViewPager.OnPageChangeListener
 {
 
-    private ViewPager mViewPager;
+    private NoScrollViewPager mViewPager;
     private List<Fragment> fragmentLists = new ArrayList<>();
     private RadioGroup mRadioGroup;
     private RadioButton mRb_home;
@@ -62,8 +63,8 @@ public class MainActivity
     }
 
 
-    private void initView() {
-        mViewPager = (ViewPager) findViewById(R.id.vp);
+   private void initView() {
+        mViewPager = (NoScrollViewPager) findViewById(R.id.vp);
         mRadioGroup = (RadioGroup) findViewById(R.id.rg);
         mRb_home = (RadioButton) findViewById(R.id.rb_home);
         mRb_newscenter = (RadioButton) findViewById(R.id.rb_newscenter);
