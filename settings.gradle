@@ -1,1 +1,2 @@
-include ':app', ':library-slidingmenu', ':eventdispatchdemo'
+include ':app', ':library-slidingmenu', ':eventdispatchdemo', ':testviewpagerindicator'
+include ':library-viewpagerindicator'

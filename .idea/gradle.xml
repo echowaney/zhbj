@@ -12,6 +12,8 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/eventdispatchdemo" />
             <option value="$PROJECT_DIR$/library-slidingmenu" />
+            <option value="$PROJECT_DIR$/library-viewpagerindicator" />
+            <option value="$PROJECT_DIR$/testviewpagerindicator" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

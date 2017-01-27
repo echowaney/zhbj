@@ -5,6 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/eventdispatchdemo/eventdispatchdemo.iml" filepath="$PROJECT_DIR$/eventdispatchdemo/eventdispatchdemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/library-slidingmenu/library-slidingmenu.iml" filepath="$PROJECT_DIR$/library-slidingmenu/library-slidingmenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library-viewpagerindicator/library-viewpagerindicator.iml" filepath="$PROJECT_DIR$/library-viewpagerindicator/library-viewpagerindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testviewpagerindicator/testviewpagerindicator.iml" filepath="$PROJECT_DIR$/testviewpagerindicator/testviewpagerindicator.iml" />
       <module fileurl="file://$PROJECT_DIR$/zhbj.iml" filepath="$PROJECT_DIR$/zhbj.iml" />
     </modules>
   </component>
